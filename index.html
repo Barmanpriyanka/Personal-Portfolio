@@ -74,20 +74,20 @@
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi labore animi distinctio. Alias, unde velit perferendis quas et quidem quia aperiam odit at delectus, esse nesciunt fugiat fugit error illum!</p>
-                    <a href="#">Learn More</a>
+                    <p>Built with HTML & CSS, this interactive Netflix-like UI showcases front-end skills. Design allows users to browse content and explore a playback interface (without streaming).</p>
+                    <a href="https://github.com/Barmanpriyanka/netflix-clone">Learn More</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-crop"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi labore animi distinctio. Alias, unde velit perferendis quas et quidem quia aperiam odit at delectus, esse nesciunt fugiat fugit error illum!</p>
-                    <a href="#">Learn More</a>
+                    <h2>UI Design</h2>
+                    <p>Leverage my UI/UX design expertise to craft visually captivating and user-friendly travel websites. I focus on intuitive search functionalities, seamless booking processes, and engaging UI elements to inspire travelers and drive conversions for your travel business.</p>
+                    <a href="https://github.com/Barmanpriyanka/Smart_Travel_Tech">Learn More</a>
                 </div>
                 <div>
                     <i class="fa-brands fa-hive"></i>
                     <h2>Blockchain</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi labore animi distinctio. Alias, unde velit perferendis quas et quidem quia aperiam odit at delectus, esse nesciunt fugiat fugit error illum!</p>
-                    <a href="#">Learn More</a>
+                    <p>This contract is written in Solidity, a programming language used for developing smart contracts on the Ethereum blockchain. The contract includes functionality to mint and burn tokens, manage balances, and track the total supply of the token.</p>
+                    <a href="https://github.com/Barmanpriyanka/MyToken">Learn More</a>
                 </div>
             </div>
         </div>
@@ -98,31 +98,31 @@
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/work-1.png" alt="Work 1">
+                    <img src="images/tic tac toe.png" alt="Work 1">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>The app connects you to the talented people around the world</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <h3>Tic Tac Toe Game</h3>
+                        <p>Tic-tac-toe is a simple, quick game for two players, played on a 3x3 grid. One player marks cells with "X" and the other with "O". The objective is to be the first to form a line of three marks horizontally, vertically, or diagonally. Players take turns placing their marks in empty cells. The game concludes when one player achieves the objective or all cells are filled, resulting in a draw if no player has aligned three marks.</p>
+                        <a href="https://barmanpriyanka.github.io/Tic-Tac-Toe-game/"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work-2.png" alt="Work 2">
+                    <img src="images/amazon clone.png" alt="Work 2">
                     <div class="layer">
-                        <h3>Music App</h3>
-                        <p>The app connects you to the talented people around the world</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <h3>Amazon clone</h3>
+                        <p>A simple static clone of the Amazon e-commerce platform. This project showcases the front-end design and layout of an online marketplace using HTML and CSS.</p>
+                        <a href="https://barmanpriyanka.github.io/Amazon-clone-using-HTML-and-CSS/"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work-3.png" alt="Work 3">
+                    <img src="images/weather website.png" alt="Work 3">
                     <div class="layer">
-                        <h3>Online Shopping App</h3>
-                        <p>The app connects you to the talented people around the world</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <h3>Weather website</h3>
+                        <p>WeatherApp is a sleek and user-friendly application that provides real-time weather information for any location worldwide.</p>
+                        <a href="https://barmanpriyanka.github.io/weather-API/"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See More</a>
+            <a href="https://github.com/Barmanpriyanka?tab=repositories" class="btn">See More</a>
         </div>
     </div>
 
@@ -150,11 +150,12 @@
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
+                    <span id="msg"></span>
                 </div>
             </div>
         </div>
         <div class="copyright">
-            <p>Copyright Priyanka. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorial</p>
+            <p>Copyright© Priyanka. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorial</p>
         </div>
     </div>
 
@@ -186,11 +187,18 @@
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbxc0Tx_p2dFadc0LL6kQI-dof4ngv_mKZ3dggBHtAX7SsG1jLPEU-Q9iuLBUksmEsrD/exec';
         const form = document.forms['submit-to-google-sheet'];
+        const msg=document.getElementById("msg");
 
         form.addEventListener('submit', e => {
             e.preventDefault();
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => console.log('Success!', response))
+                .then(response =>{
+                    msg.innerHTML="Message sent successfully";
+                    setTimeout(function(){
+                        msg.innerHTML="";
+                    },5000);
+                    form.reset();
+                })
                 .catch(error => console.error('Error!', error.message));
         });
     </script>
