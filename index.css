@@ -434,7 +434,7 @@ nav ul li a:hover::after {
 
 /*-------portfolio------*/
 #portfolio {
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 .work-list {
@@ -609,7 +609,7 @@ form .btn2 {
     text-align: center;
     padding: 25px 0;
     margin-top: 20px;
-    background: #262626;
+    background: #081b29;
     font-weight: 300;
 }
 
