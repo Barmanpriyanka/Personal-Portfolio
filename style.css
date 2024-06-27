@@ -311,14 +311,14 @@ nav ul li a:hover::after {
 }
 
 .about-col-1 img {
-    width: 100%;
+    width: 80%;
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
     filter: grayscale(0.2);
 }
 
 .about-col-2 {
-    flex-basis: 60%;
+    flex-basis :60%;
 }
 
 .sub-title {
@@ -335,7 +335,7 @@ nav ul li a:hover::after {
 
 .tab-links {
     margin-right: 50px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -363,7 +363,7 @@ nav ul li a:hover::after {
 
 .tab-contents ul li span {
     color: #0ef;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .tab-contents {
