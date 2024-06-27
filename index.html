@@ -6,12 +6,11 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://kit.fontawesome.com/f6427b8065.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f6427b8065.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://kit.fontawesome.com https://unpkg.com https://script.google.com; style-src 'self' https://unpkg.com;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://kit.fontawesome.com https://unpkg.com https://script.google.com; style-src 'self' https://unpkg.com https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com https://unpkg.com;">
     <meta name="google-site-verification" content="rD3Y2naidL4WpEkRrvip-Yc6rlrrIJ1rlsyM6Y-JSrg" />
-
 </head>
 <body>
     <header class="header">
@@ -39,7 +38,7 @@
         </div>
     </section>
 
-    <div id="about">
+    <section id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
@@ -49,8 +48,8 @@
                     <h1 class="sub-title">About Me</h1>
                     <p>Hi, I am Priyanka Barman, a college student pursuing a Bachelor of Engineering (B.E) in Computer Science and Engineering (CSE) at Chandigarh University. Currently learning Solidity (smart contract programming) and interested in technology, software development, and blockchain.</p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
@@ -69,9 +68,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="services">
+    <section id="services">
         <div class="container">
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
@@ -95,9 +94,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="portfolio">
+    <section id="portfolio">
         <div class="container">
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
@@ -128,19 +127,19 @@
             </div>
             <a href="https://github.com/Barmanpriyanka?tab=repositories" class="btn">See More</a>
         </div>
-    </div>
+    </section>
 
-    <div id="contact">
+    <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
                     <p><i class="fa-solid fa-paper-plane"></i> priyankabarman1904@mail.com</p>
                     <div class="home-sci">
-                        <a href="https://www.facebook.com/profile.php?id=100085119349042" ><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/priyanka_barman1604?igsh=ZDgzZng1MnE1N3po" style="--i:8"><i class='bx bxl-instagram'></i></a>
-                        <a href="https://github.com/Barmanpriyanka" style="--i:9"><i class='bx bxl-linkedin-square'></i></a>
-                        <a href="https://github.com/Barmanpriyanka" style="--i:10"><i class='bx bxl-github'></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100085119349042"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/priyanka_barman1604?igsh=ZDgzZng1MnE1N3po"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://github.com/Barmanpriyanka"><i class='bx bxl-linkedin-square'></i></a>
+                        <a href="https://github.com/Barmanpriyanka"><i class='bx bxl-github'></i></a>
                     </div>
                     <div>
                         <a href="images/Priyanka_barman_CV.pdf" download class="btn btn2">Download CV</a>
@@ -161,13 +160,13 @@
         <div class="copyright">
             <p>Copyright© Priyanka. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorial</p>
         </div>
-    </div>
+    </section>
 
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
 
-        function opentab(tabname) {
+        function opentab(event, tabname) {
             for (var tablink of tablinks) {
                 tablink.classList.remove("active-link");
             }
@@ -196,7 +195,7 @@
         form.addEventListener('submit', e => {
             e.preventDefault();
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response =>{
+                .then(response => {
                     msg.innerHTML="Message sent successfully";
                     setTimeout(function(){
                         msg.innerHTML="";
