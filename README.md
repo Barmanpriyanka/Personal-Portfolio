@@ -1,33 +1,50 @@
-Priyanka Barman's Portfolio
-Overview
-This repository contains the source code for Priyanka Barman's portfolio website. It showcases Priyanka's skills in web development, UI/UX design, and blockchain programming, providing a comprehensive view of her projects, services, and contact information.
+# Portfolio: Priyanka Barman
 
-Features
-Home: Introduction to Priyanka Barman with a brief overview of her skills and a call-to-action to learn more about her.
-About: Details about Priyanka's background, education, and skills in UI/UX design, web development, and blockchain.
-Services: Descriptions of the services Priyanka offers, including web design, UI design, and blockchain development.
-Portfolio: Showcase of Priyanka's recent projects, including Tic Tac Toe Game, Amazon Clone, and Weather Website, with links to live demos.
-Contact: Contact form for reaching out to Priyanka Barman, along with her email, phone number, and social media links.
-Technologies Used
-Languages: HTML, CSS, JavaScript
-Frameworks/Libraries: Font Awesome, Boxicons
-Tools/Platforms: Google Sheets (for form submission), GitHub Pages (for deployment)
-Getting Started
-To view Priyanka Barman's portfolio:
+## Introduction
 
-Clone this repository:
-bash
-Copy code
-git clone https://github.com/Barmanpriyanka/Portfolio.git
-Open index.html in your web browser.
-Usage
-Explore each section of the portfolio website:
+Welcome to my portfolio! This repository showcases my skills and projects as a web developer and blockchain enthusiast. Whether you're here to explore my work or looking to collaborate, I hope you find everything you need.
 
-Click on navigation links to move between sections (Home, About, Services, Portfolio, Contact).
-Visit project links under Portfolio to view live demos of Priyanka's work.
-Use the Contact form to send messages directly to Priyanka's email via Google Sheets integration.
-Contributing
-Contributions are welcome! If you have suggestions or find issues, please submit them through GitHub issues or fork the repository and submit a pull request.
+## Sections
 
-Author
-Priyanka Barman - GitHub
+1. **Home**: Introduction and overview of my skills and goals.
+2. **About**: Information about me, my education, and skills.
+3. **Services**: Details about the services I offer in web and UI design, and blockchain development.
+4. **Portfolio**: Showcase of my recent projects.
+5. **Contact**: Ways to get in touch with me.
+
+## Navigation
+
+- **Home**: Introduction and overview.
+- **About**: Personal and educational background.
+- **Services**: Details about offered services.
+- **Portfolio**: Showcase of projects.
+- **Contact**: Information to get in touch.
+
+## Usage
+
+### Viewing the Portfolio
+
+To view the portfolio:
+
+1. Clone this repository to your local machine using `git clone https://github.com/Barmanpriyanka/portfolio.git`.
+2. Navigate to the directory containing the repository.
+3. Open `index.html` in your web browser to navigate through the sections.
+
+### Exploring Projects
+
+In the **Portfolio** section:
+
+- Each project is showcased with an image and a brief description.
+- Click on project titles or "Learn More" links to view detailed project descriptions and demos.
+- Explore GitHub repositories for full source code and contributions.
+
+### Contacting Me
+
+To get in touch:
+
+- Use the contact form under the **Contact** section to send me a message.
+- Reach out via email at priyankabarman1904@gmail.com or connect with me on LinkedIn, GitHub, Instagram, or Facebook.
+
+---
+
+For more details, visit my [GitHub profile](https://github.com/Barmanpriyanka).
