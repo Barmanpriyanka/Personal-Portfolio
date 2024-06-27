@@ -62,7 +62,8 @@ body {
     background-position: center;
     display: flex;
     align-items: center;
-    padding: 70px 10% 0;
+    padding: 80px 20% ;
+    text-align: center;
 }
 
 .home-content {
@@ -75,6 +76,14 @@ body {
     opacity: 0;
     animation: slidebottom 1s ease forwards;
     animation-delay: .7s;
+}
+.home p {
+    font-size: 1.2rem; /* Adjust font size */
+    line-height: 1.6; /* Adjust line height for readability */
+    margin-bottom: 20px; /* Add spacing between paragraphs */
+}
+.home h1 {
+    font-size: 3.5rem; /* Adjust font size */
 }
 
 .home-content h3:nth-of-type(2) {
