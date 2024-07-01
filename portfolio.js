@@ -46,3 +46,19 @@ form.addEventListener('submit', e => {
             msg.innerHTML = "Error sending message";
         });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navbar = document.querySelector('.navbar');
+
+    menuToggle.addEventListener('click', function () {
+        navbar.classList.toggle('show');
+    });
+
+    // Optional: Close the menu when clicking on a link
+    document.querySelectorAll('.navbar a').forEach(link => {
+        link.addEventListener('click', function () {
+            navbar.classList.remove('show');
+        });
+    });
+});
